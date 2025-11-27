@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Практика 15: viewport-fit=cover для поддержки вырезов на мобильных -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Портфолио разработчика: проекты на Go, Python и JS.">
+    <title>Портфолио | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Практика 15: Ссылка-пропуск для клавиатурной навигации -->
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <span class="logo">MyPortfolio</span>
+            <!-- Практика 17: Семантическая навигация -->
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link" aria-current="page">Главная</a></li>
+                    <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <!-- Практика 16: Hero секция с picture и разными форматами -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__content">
+                <figure class="hero__image-wrapper">
+                    <picture>
+                        <!-- WebP для современных браузеров -->
+                        <img class="hero__photo"
+                             src="sticker.webp"
+                             width="200" height="200"
+                             alt="Фотография разработчика"
+                             fetchpriority="high">
+                    </picture>
+                </figure>
+                <h1 id="hero-title" class="hero__title">Frontend & Backend Разработка</h1>
+                <p class="hero__text">Создаю доступные, быстрые и надежные веб-приложения.</p>
+            </div>
+        </section>
+
+        <!-- Практика 15: Grid-сетка с auto-fit -->
+        <section class="projects container" aria-labelledby="projects-title">
+            <h2 id="projects-title" class="section-title">Мои проекты</h2>
+            <div class="projects__grid">
+                <article class="project-card">
+                    <h3 class="project-card__title">E-commerce API</h3>
+                    <p class="project-card__desc">Микросервисная архитектура на Go.</p>
+                    <a href="#" class="btn" aria-label="Подробнее о проекте E-commerce API">Подробнее</a>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-card__title">React Dashboard</h3>
+                    <p class="project-card__desc">SPA с использованием Redux Toolkit.</p>
+                    <a href="#" class="btn" aria-label="Подробнее о проекте React Dashboard">Подробнее</a>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-card__title">Telegram Bot</h3>
+                    <p class="project-card__desc">Асинхронный бот на Python (aiogram).</p>
+                    <a href="#" class="btn" aria-label="Подробнее о проекте Telegram Bot">Подробнее</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Студент. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

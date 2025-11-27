@@ -48,24 +48,60 @@
         <section class="projects container" aria-labelledby="projects-title">
             <h2 id="projects-title" class="section-title">Мои проекты</h2>
             <div class="projects__grid">
-                <article class="project-card">
-                    <h3 class="project-card__title">E-commerce API</h3>
-                    <p class="project-card__desc">Микросервисная архитектура на Go.</p>
-                    <a href="#" class="btn" aria-label="Подробнее о проекте E-commerce API">Подробнее</a>
-                </article>
+    <!-- Карточка 1 -->
+    <article class="project-card">
+        <figure class="project-card__image-wrapper">
+            <picture>
+                <!-- WebP версия для современных браузеров -->
+                <!-- Стандартный JPG как фолбэк -->
+                <img class="project-card__image"
+                     src="1.jpg"
+                     alt="Скриншот API интерфейса"
+                     loading="lazy">
+            </picture>
+        </figure>
+        <div class="project-card__content">
+            <h3 class="project-card__title">E-commerce API</h3>
+            <p class="project-card__desc">Микросервисная архитектура на Go. Реализована система заказов и оплат.</p>
+            <a href="#" class="btn" aria-label="Подробнее о проекте E-commerce API">Подробнее</a>
+        </div>
+    </article>
 
-                <article class="project-card">
-                    <h3 class="project-card__title">React Dashboard</h3>
-                    <p class="project-card__desc">SPA с использованием Redux Toolkit.</p>
-                    <a href="#" class="btn" aria-label="Подробнее о проекте React Dashboard">Подробнее</a>
-                </article>
+    <!-- Карточка 2 -->
+    <article class="project-card">
+        <figure class="project-card__image-wrapper">
+            <picture>
+                <img class="project-card__image"
+                     src="2.png"
+                     alt="Дашборд аналитики"
+                     loading="lazy">
+            </picture>
+        </figure>
+        <div class="project-card__content">
+            <h3 class="project-card__title">React Dashboard</h3>
+            <p class="project-card__desc">SPA с использованием Redux Toolkit и графиками Recharts.</p>
+            <a href="#" class="btn" aria-label="Подробнее о проекте React Dashboard">Подробнее</a>
+        </div>
+    </article>
 
-                <article class="project-card">
-                    <h3 class="project-card__title">Telegram Bot</h3>
-                    <p class="project-card__desc">Асинхронный бот на Python (aiogram).</p>
-                    <a href="#" class="btn" aria-label="Подробнее о проекте Telegram Bot">Подробнее</a>
-                </article>
-            </div>
+    <!-- Карточка 3 -->
+    <article class="project-card">
+        <figure class="project-card__image-wrapper">
+            <picture>
+                <img class="project-card__image"
+                     src="3.jpg"
+                     alt="Демонстрация работы бота"
+                     loading="lazy">
+            </picture>
+        </figure>
+        <div class="project-card__content">
+            <h3 class="project-card__title">Telegram Bot</h3>
+            <p class="project-card__desc">Асинхронный бот на Python (aiogram) для учета финансов.</p>
+            <a href="#" class="btn" aria-label="Подробнее о проекте Telegram Bot">Подробнее</a>
+        </div>
+    </article>
+</div>
+
         </section>
     </main>
 
